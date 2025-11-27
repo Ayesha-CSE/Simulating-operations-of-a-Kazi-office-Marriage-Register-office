@@ -1,10 +1,7 @@
 package com.csc213.kazioffice_marriageregisteroffice.Kazi;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class CreateMarriageCaseController
 {
@@ -36,6 +33,8 @@ public class CreateMarriageCaseController
     private TableColumn addressColum;
     @javafx.fxml.FXML
     private TextField ageText;
+    @javafx.fxml.FXML
+    private Label marriageCase;
 
     @javafx.fxml.FXML
     public void initialize() {
