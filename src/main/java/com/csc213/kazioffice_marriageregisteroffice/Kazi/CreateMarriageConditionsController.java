@@ -37,4 +37,8 @@ public class CreateMarriageConditionsController
     @javafx.fxml.FXML
     public void generateFile(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void backbutton(ActionEvent actionEvent) {
+    }
 }

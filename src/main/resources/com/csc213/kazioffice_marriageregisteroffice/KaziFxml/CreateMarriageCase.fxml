@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="603.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc213.kazioffice_marriageregisteroffice.Kazi.CreateMarriageCaseController">
+<AnchorPane prefHeight="684.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc213.kazioffice_marriageregisteroffice.Kazi.CreateMarriageCaseController">
    <children>
       <Label layoutX="128.0" layoutY="143.0" text="Name:" />
       <TextField fx:id="nameText" layoutX="190.0" layoutY="139.0" />
@@ -40,5 +40,6 @@
             <Font size="35.0" />
          </font>
       </Label>
+      <Button layoutX="33.0" layoutY="628.0" mnemonicParsing="false" onAction="#backButton" text="Back To Dashboard" />
    </children>
 </AnchorPane>

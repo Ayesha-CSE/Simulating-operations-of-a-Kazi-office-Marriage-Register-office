@@ -34,5 +34,6 @@
       </TableView>
       <Button layoutX="37.0" layoutY="531.0" mnemonicParsing="false" onAction="#saveCondition" prefHeight="26.0" prefWidth="111.0" text="Save Conditions" />
       <Button layoutX="453.0" layoutY="531.0" mnemonicParsing="false" onAction="#generateFile" prefHeight="26.0" prefWidth="111.0" text="Generate bin File" />
+      <Button layoutX="32.0" layoutY="581.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="26.0" prefWidth="122.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>

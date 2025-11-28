@@ -41,4 +41,8 @@ public class CreateMarriageCaseController
     @javafx.fxml.FXML
     public void SaveButton(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) {
+    }
 }

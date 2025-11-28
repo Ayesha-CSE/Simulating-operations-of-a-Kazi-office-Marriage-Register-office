@@ -29,4 +29,8 @@ public class ForwardCaseToRegistrarController
     @javafx.fxml.FXML
     public void forwardToRegistrar(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) {
+    }
 }
