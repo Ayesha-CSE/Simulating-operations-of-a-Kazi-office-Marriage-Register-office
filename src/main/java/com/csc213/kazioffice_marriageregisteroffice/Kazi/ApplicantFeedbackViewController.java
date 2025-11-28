@@ -27,12 +27,14 @@ public class ApplicantFeedbackViewController
     private TableColumn dateColumn;
     @javafx.fxml.FXML
     private TextArea feedbackArea;
+    @javafx.fxml.FXML
+    private TextField caseID1;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void markAsReviewedButton(ActionEvent actionEvent) {
     }
 
@@ -44,11 +46,19 @@ public class ApplicantFeedbackViewController
     public void backButton(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void saveButton(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void applyFilter(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void resetButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void searchFilter(ActionEvent actionEvent) {
     }
 }
