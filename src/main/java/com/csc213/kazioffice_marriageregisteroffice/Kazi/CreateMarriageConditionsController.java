@@ -1,5 +1,6 @@
 package com.csc213.kazioffice_marriageregisteroffice.Kazi;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 public class CreateMarriageConditionsController
@@ -21,13 +22,9 @@ public class CreateMarriageConditionsController
     @javafx.fxml.FXML
     private TableView tableView;
     @javafx.fxml.FXML
-    private Label successMSg;
-    @javafx.fxml.FXML
     private RadioButton consentNo;
     @javafx.fxml.FXML
     private TableColumn conditionColumn;
-    @javafx.fxml.FXML
-    private Label errorMsg;
 
     @javafx.fxml.FXML
     public void initialize() {

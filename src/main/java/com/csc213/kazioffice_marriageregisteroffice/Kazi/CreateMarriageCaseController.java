@@ -33,8 +33,6 @@ public class CreateMarriageCaseController
     private TableColumn addressColum;
     @javafx.fxml.FXML
     private TextField ageText;
-    @javafx.fxml.FXML
-    private Label marriageCase;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -35,7 +35,7 @@
             <TableColumn fx:id="nameColum1" prefWidth="124.800048828125" text="Date" />
         </columns>
       </TableView>
-      <Label fx:id="marriageCase" layoutX="244.0" layoutY="42.0" prefHeight="40.0" prefWidth="338.0" text="Create Marriage Case">
+      <Label layoutX="244.0" layoutY="42.0" prefHeight="40.0" prefWidth="338.0" text="Create Marriage Case">
          <font>
             <Font size="35.0" />
          </font>
