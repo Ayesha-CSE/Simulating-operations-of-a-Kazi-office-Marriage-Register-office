@@ -1,5 +1,8 @@
 package com.csc213.kazioffice_marriageregisteroffice.Kazi;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class ApplicantsAppointmentRequestController
 {
     @javafx.fxml.FXML
