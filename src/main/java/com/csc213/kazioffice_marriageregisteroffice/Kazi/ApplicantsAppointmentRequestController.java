@@ -28,13 +28,17 @@ public class ApplicantsAppointmentRequestController
     @javafx.fxml.FXML
     private DatePicker requestedDate;
     @javafx.fxml.FXML
-    private TextField status;
+    private ComboBox reqStatusCombo1;
+    @javafx.fxml.FXML
+    private ComboBox maritalStatusCombo;
+    @javafx.fxml.FXML
+    private TableColumn requestedTimeColumn1;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void filterBtn(ActionEvent actionEvent) {
     }
 
@@ -48,5 +52,9 @@ public class ApplicantsAppointmentRequestController
 
     @javafx.fxml.FXML
     public void rejectBtn(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void saveBtn(ActionEvent actionEvent) {
     }
 }

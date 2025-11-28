@@ -16,15 +16,21 @@ public class CreateMarriageConditionsController
     @javafx.fxml.FXML
     private TextArea healthReqField;
     @javafx.fxml.FXML
-    private TableColumn valueColumn;
-    @javafx.fxml.FXML
     private Label marriageCondition;
     @javafx.fxml.FXML
     private TableView tableView;
     @javafx.fxml.FXML
     private RadioButton consentNo;
     @javafx.fxml.FXML
-    private TableColumn conditionColumn;
+    private TableColumn healthRequirementColumn;
+    @javafx.fxml.FXML
+    private ToggleGroup consent;
+    @javafx.fxml.FXML
+    private TableColumn specialRequestColumn;
+    @javafx.fxml.FXML
+    private TableColumn dowryAmountColumn;
+    @javafx.fxml.FXML
+    private TableColumn consentColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

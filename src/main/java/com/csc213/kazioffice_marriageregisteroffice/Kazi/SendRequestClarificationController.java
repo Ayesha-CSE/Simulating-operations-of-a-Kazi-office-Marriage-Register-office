@@ -16,4 +16,5 @@ public class SendRequestClarificationController
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }}

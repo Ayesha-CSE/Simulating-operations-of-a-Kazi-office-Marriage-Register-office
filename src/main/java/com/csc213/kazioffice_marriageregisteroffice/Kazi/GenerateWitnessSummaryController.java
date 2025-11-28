@@ -3,8 +3,6 @@ package com.csc213.kazioffice_marriageregisteroffice.Kazi;
 public class GenerateWitnessSummaryController
 {
     @javafx.fxml.FXML
-    private TextField sessionField;
-    @javafx.fxml.FXML
     private TextField caseId;
     @javafx.fxml.FXML
     private TextArea witnessNotes;
@@ -14,6 +12,8 @@ public class GenerateWitnessSummaryController
     private TextArea caseDetails;
     @javafx.fxml.FXML
     private TextField applicantName;
+    @javafx.fxml.FXML
+    private DatePicker date;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -27,7 +27,7 @@ public class GenerateWitnessSummaryController
     public void backBtn(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void saveBtn(ActionEvent actionEvent) {
     }
 }

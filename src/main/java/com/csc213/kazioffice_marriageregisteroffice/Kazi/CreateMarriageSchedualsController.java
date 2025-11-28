@@ -12,8 +12,6 @@ public class CreateMarriageSchedualsController
     @javafx.fxml.FXML
     private TableColumn timeColumn;
     @javafx.fxml.FXML
-    private ComboBox selectTime;
-    @javafx.fxml.FXML
     private TextField caseId;
     @javafx.fxml.FXML
     private TableView tableView;
@@ -23,6 +21,8 @@ public class CreateMarriageSchedualsController
     private TableColumn dateColumn;
     @javafx.fxml.FXML
     private DatePicker selectDate;
+    @javafx.fxml.FXML
+    private TextField timeField;
 
     @javafx.fxml.FXML
     public void initialize() {

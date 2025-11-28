@@ -24,7 +24,7 @@
       <Label layoutX="396.0" layoutY="245.0" text="Marital Status:" />
       <ComboBox fx:id="maritalCombox" layoutX="491.0" layoutY="241.0" prefWidth="150.0" />
       <Button layoutX="339.0" layoutY="288.0" mnemonicParsing="false" onAction="#SaveButton" text="Save Details" />
-      <TableView fx:id="tableView" layoutX="24.0" layoutY="335.0" prefHeight="230.0" prefWidth="732.0">
+      <TableView fx:id="tableView" layoutX="24.0" layoutY="335.0" prefHeight="230.0" prefWidth="709.0">
         <columns>
           <TableColumn fx:id="nameColum" prefWidth="75.0" text="Name" />
           <TableColumn fx:id="ageColum" prefWidth="75.0" text="Age" />
@@ -32,7 +32,7 @@
             <TableColumn fx:id="contactColum" prefWidth="104.79998779296875" text="Contact" />
             <TableColumn fx:id="idNumberColum" prefWidth="111.20001220703125" text="ID Number" />
             <TableColumn fx:id="maritalColum" prefWidth="162.39999389648438" text="Marital Status" />
-            <TableColumn fx:id="nameColum1" prefWidth="124.800048828125" text="Date" />
+            <TableColumn fx:id="nameColum1" prefWidth="104.0" text="Date" />
         </columns>
       </TableView>
       <Label layoutX="244.0" layoutY="42.0" prefHeight="40.0" prefWidth="338.0" text="Create Marriage Case">
