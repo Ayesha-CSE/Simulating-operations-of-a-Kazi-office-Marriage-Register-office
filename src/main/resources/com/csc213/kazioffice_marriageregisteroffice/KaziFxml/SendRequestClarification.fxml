@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc213.kazioffice_marriageregisteroffice.Kazi.SendRequestClarificationController">
    <children>
       <Label layoutX="180.0" layoutY="38.0" prefHeight="38.0" prefWidth="263.0" text="Send Clarification Request">
@@ -21,7 +20,7 @@
       <TextField fx:id="applicantName" layoutX="151.0" layoutY="89.0" />
       <TextField fx:id="caseID" layoutX="151.0" layoutY="124.0" />
       <TextArea fx:id="clarificationMessage" layoutX="158.0" layoutY="161.0" prefHeight="50.0" prefWidth="392.0" />
-      <Label layoutX="45.0" layoutY="249.0" prefHeight="18.0" prefWidth="70.0" text="Instruction:" />
+      <Label layoutX="39.0" layoutY="249.0" prefHeight="18.0" prefWidth="70.0" text="Instruction:" />
       <TextArea fx:id="instructionField" layoutX="151.0" layoutY="233.0" prefHeight="50.0" prefWidth="392.0" />
       <Button layoutX="39.0" layoutY="414.0" mnemonicParsing="false" text="Back to Dashboard" />
    </children>
