@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.csc213.kazioffice_marriageregisteroffice.Witness.WitnessAttendanceController"
+            prefWidth="900" prefHeight="520">
+
+    <!-- Top area: witness info -->
+    <VBox spacing="8" AnchorPane.topAnchor="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8">
+        <Label text="Witness Panel — Attend Marriage Ceremony" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+        <HBox spacing="8">
+            <Label text="Witness Name:"/>
+            <TextField fx:id="tfWitnessName" promptText="Full name" prefWidth="220"/>
+            <Label text="Witness NID:"/>
+            <TextField fx:id="tfWitnessNID" promptText="NID number" prefWidth="160"/>
+            <Label text="Contact:"/>
+            <TextField fx:id="tfWitnessContact" promptText="Phone / Email" prefWidth="180"/>
+        </HBox>
+    </VBox>
+
+    <!-- Center area: table and details -->
+    <HBox spacing="12" AnchorPane.topAnchor="90" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.bottomAnchor="80">
+        <!-- Left: Table -->
+        <VBox spacing="6" prefWidth="520">
+            <Label text="Upcoming Ceremonies"/>
+            <TableView fx:id="tvCeremonies" prefHeight="300" prefWidth="520">
+                <columns>
+                    <TableColumn fx:id="colCaseId" text="Case ID" prefWidth="90"/>
+                    <TableColumn fx:id="colApplicant" text="Applicant(s)" prefWidth="180"/>
+                    <TableColumn fx:id="colDate" text="Date" prefWidth="100"/>
+                    <TableColumn fx:id="colVenue" text="Venue" prefWidth="110"/>
+                    <TableColumn fx:id="colStatus" text="Status" prefWidth="120"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+        <!-- Right: Selected details -->
+        <VBox spacing="8" prefWidth="340">
+            <Label text="Selected Ceremony Details"/>
+            <HBox spacing="8">
+                <Label text="Case ID:" prefWidth="90"/>
+                <TextField fx:id="tfCaseId" editable="false" prefWidth="220"/>
+            </HBox>
+
+            <HBox spacing="8">
+                <Label text="Applicant(s):" prefWidth="90"/>
+                <TextField fx:id="tfApplicants" editable="false" prefWidth="220"/>
+            </HBox>
+
+            <HBox spacing="8">
+                <Label text="Venue:" prefWidth="90"/>
+                <TextField fx:id="tfVenue" editable="false" prefWidth="220"/>
+            </HBox>
+
+            <HBox spacing="8">
+                <Label text="Scheduled Date:" prefWidth="90"/>
+                <DatePicker fx:id="dpScheduledDate" editable="false" prefWidth="220"/>
+            </HBox>
+
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Attendance:" prefWidth="90"/>
+                <RadioButton fx:id="rbWillAttend" text="Will Attend"/>
+                <RadioButton fx:id="rbWillNotAttend" text="Will Not Attend"/>
+            </HBox>
+
+            <HBox spacing="8">
+                <Label text="Relationship:" prefWidth="90"/>
+                <ComboBox fx:id="cbRelationship" prefWidth="220"/>
+            </HBox>
+
+            <Label text="Notes:"/>
+            <TextArea fx:id="taNotes" prefRowCount="3" wrapText="true" prefWidth="310"/>
+
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button text="Confirm Attendance" onAction="#onConfirmAttendance"/>
+                <Button text="Check In (Arrived)" onAction="#onCheckIn"/>
+            </HBox>
+        </VBox>
+    </HBox>
+
+    <!-- Bottom area: filters and status -->
+    <HBox spacing="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.bottomAnchor="8" alignment="CENTER_LEFT">
+        <Label text="Filter by Date:"/>
+        <DatePicker fx:id="dpFilterDate"/>
+        <Label text="Status:"/>
+        <ComboBox fx:id="cbFilterStatus" prefWidth="140"/>
+        <Button text="Apply Filters" onAction="#onApplyFilters"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Label fx:id="lblStatus" text="Ready"/>
+    </HBox>
+</AnchorPane>

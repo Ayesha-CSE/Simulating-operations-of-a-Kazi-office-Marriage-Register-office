@@ -1,5 +1,10 @@
 package com.csc213.kazioffice_marriageregisteroffice.Kazi;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class GenerateWitnessSummaryController
 {
     @javafx.fxml.FXML
