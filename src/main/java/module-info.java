@@ -3,7 +3,7 @@ module com.csc213.kazioffice_marriageregisteroffice {
     requires javafx.fxml;
 
     opens com.csc213.kazioffice_marriageregisteroffice.Witness to javafx.fxml;
-    opens com.csc213.kazioffice_marriageregisteroffice.model to javafx.fxml;
+    opens com.csc213.kazioffice_marriageregisteroffice.Witness.ModelClass to javafx.fxml;
 //    opens com.csc213.kazioffice_marriageregisteroffice.LegalAdvisor to javafx.fxml;
     opens com.csc213.kazioffice_marriageregisteroffice.Kazi to javafx.fxml;
     //opens com.csc213.kazioffice_marriageregisteroffice.MarriageRegister to javafx.fxml;

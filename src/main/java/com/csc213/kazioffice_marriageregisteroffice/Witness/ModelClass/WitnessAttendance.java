@@ -1,4 +1,4 @@
-package com.csc213.kazioffice_marriageregisteroffice.model;
+package com.csc213.kazioffice_marriageregisteroffice.Witness.ModelClass;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

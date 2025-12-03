@@ -1,7 +1,7 @@
 package com.csc213.kazioffice_marriageregisteroffice.Witness;
 
-import com.csc213.kazioffice_marriageregisteroffice.model.CeremonySchedule;
-import com.csc213.kazioffice_marriageregisteroffice.model.WitnessAttendance;
+import com.csc213.kazioffice_marriageregisteroffice.Witness.ModelClass.CeremonySchedule;
+import com.csc213.kazioffice_marriageregisteroffice.Witness.ModelClass.WitnessAttendance;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
