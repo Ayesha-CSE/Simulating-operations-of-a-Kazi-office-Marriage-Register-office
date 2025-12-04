@@ -8,7 +8,7 @@ public class WitnessCourtTestimony {
     private String witnessNid;
     private LocalDate testimonyDate;
     private String testimonyStatement;
-    private String testimonyStatement;
+
 
     public WitnessCourtTestimony(String caseId, String witnessName, String witnessNid, LocalDate testimonyDate, String testimonyStatement, String testimonyStatement1) {
         this.caseId = caseId;
@@ -16,7 +16,7 @@ public class WitnessCourtTestimony {
         this.witnessNid = witnessNid;
         this.testimonyDate = testimonyDate;
         this.testimonyStatement = testimonyStatement;
-        this.testimonyStatement = testimonyStatement1;
+
     }
 
     public String getCaseId() {
