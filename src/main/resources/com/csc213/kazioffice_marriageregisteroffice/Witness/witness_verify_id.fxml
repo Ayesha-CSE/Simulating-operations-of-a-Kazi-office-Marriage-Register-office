@@ -1,84 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
-            prefWidth="900" prefHeight="520"
-            fx:controller="com.csc213.kazioffice_marriageregisteroffice.Witness.WitnessVerifyIDController">
+<AnchorPane prefHeight="520" prefWidth="870.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="com.csc213.kazioffice_marriageregisteroffice.Witness.WitnessVerifyIDController">
 
     <!-- PAGE TITLE -->
-    <Label text="Witness - Verify Identities of Bride and Groom"
-           style="-fx-font-size:18px; -fx-font-weight:bold;"
-           AnchorPane.topAnchor="10" AnchorPane.leftAnchor="15"/>
+    <Label style="-fx-font-size:18px; -fx-font-weight:bold;" text="Witness - Verify Identities of Bride and Groom" AnchorPane.leftAnchor="15" AnchorPane.topAnchor="10" />
 
     <!-- CASE SELECTION SECTION -->
-    <Label text="Select Case:"
-           AnchorPane.topAnchor="60" AnchorPane.leftAnchor="20"/>
-    <ComboBox fx:id="cbCaseList"
-              promptText="Select Marriage Case"
-              prefWidth="250"
-              AnchorPane.topAnchor="55" AnchorPane.leftAnchor="120"/>
+    <Label text="Select Case:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="60" />
+    <ComboBox fx:id="cbCaseList" prefWidth="250" promptText="Select Marriage Case" AnchorPane.leftAnchor="120" AnchorPane.topAnchor="55" />
 
-    <Button text="Load Case"
-            fx:id="btnLoadCase"
-            onAction="#onLoadCase"
-            AnchorPane.topAnchor="55" AnchorPane.leftAnchor="380"/>
+    <Button fx:id="btnLoadCase" onAction="#onLoadCase" text="Load Case" AnchorPane.leftAnchor="380" AnchorPane.topAnchor="55" />
 
     <!-- TABLE OF CASES -->
-    <TableView fx:id="tvCases"
-               prefWidth="860" prefHeight="170"
-               AnchorPane.topAnchor="100" AnchorPane.leftAnchor="20">
+    <TableView fx:id="tvCases" prefHeight="170" prefWidth="860" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="100">
         <columns>
-            <TableColumn fx:id="colCaseId" text="Case ID" prefWidth="120"/>
-            <TableColumn fx:id="colBride" text="Bride Name" prefWidth="200"/>
-            <TableColumn fx:id="colGroom" text="Groom Name" prefWidth="200"/>
-            <TableColumn fx:id="colDate" text="Marriage Date" prefWidth="150"/>
-            <TableColumn fx:id="colStatus" text="Status" prefWidth="150"/>
+            <TableColumn fx:id="colCaseId" prefWidth="120" text="Case ID" />
+            <TableColumn fx:id="colBride" prefWidth="200" text="Bride Name" />
+            <TableColumn fx:id="colGroom" prefWidth="200" text="Groom Name" />
+            <TableColumn fx:id="colDate" prefWidth="150" text="Marriage Date" />
+            <TableColumn fx:id="colStatus" prefWidth="150" text="Status" />
         </columns>
     </TableView>
 
     <!-- FORM SECTION -->
-    <Label text="Bride NID:"
-           AnchorPane.topAnchor="290" AnchorPane.leftAnchor="20"/>
-    <TextField fx:id="tfBrideNID"
-               prefWidth="200"
-               AnchorPane.topAnchor="285" AnchorPane.leftAnchor="120"/>
+    <Label text="Bride NID:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="290" />
+    <TextField fx:id="tfBrideNID" prefWidth="200" AnchorPane.leftAnchor="120" AnchorPane.topAnchor="285" />
 
-    <Label text="Groom NID:"
-           AnchorPane.topAnchor="330" AnchorPane.leftAnchor="20"/>
-    <TextField fx:id="tfGroomNID"
-               prefWidth="200"
-               AnchorPane.topAnchor="325" AnchorPane.leftAnchor="120"/>
+    <Label text="Groom NID:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="330" />
+    <TextField fx:id="tfGroomNID" prefWidth="200" AnchorPane.leftAnchor="120" AnchorPane.topAnchor="325" />
 
-    <Label text="Verification Result:"
-           AnchorPane.topAnchor="370" AnchorPane.leftAnchor="20"/>
-    <ComboBox fx:id="cbVerificationResult"
-              prefWidth="200"
-              promptText="Select"
-              AnchorPane.topAnchor="365" AnchorPane.leftAnchor="150"/>
+    <Label text="Verification Result:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />
+    <ComboBox fx:id="cbVerificationResult" prefWidth="200" promptText="Select" AnchorPane.leftAnchor="150" AnchorPane.topAnchor="365" />
 
     <!-- NOTES -->
-    <Label text="Notes:" AnchorPane.topAnchor="290" AnchorPane.leftAnchor="360"/>
-    <TextArea fx:id="taNotes"
-              prefWidth="350" prefHeight="100"
-              wrapText="true"
-              AnchorPane.topAnchor="285" AnchorPane.leftAnchor="420"/>
+    <Label text="Notes:" AnchorPane.leftAnchor="360" AnchorPane.topAnchor="290" />
+    <TextArea fx:id="taNotes" prefHeight="100" prefWidth="350" wrapText="true" AnchorPane.leftAnchor="420" AnchorPane.topAnchor="285" />
 
     <!-- RADIO BUTTONS -->
-    <RadioButton fx:id="rbIdentityMatched"
-                 text="Identity Matched"
-                 AnchorPane.topAnchor="410" AnchorPane.leftAnchor="20"/>
+    <RadioButton fx:id="rbIdentityMatched" text="Identity Matched" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="410" />
 
-    <RadioButton fx:id="rbIdentityMismatch"
-                 text="Identity Mismatch"
-                 AnchorPane.topAnchor="410" AnchorPane.leftAnchor="160"/>
+    <RadioButton fx:id="rbIdentityMismatch" text="Identity Mismatch" AnchorPane.leftAnchor="160" AnchorPane.topAnchor="410" />
 
     <!-- SUBMIT BUTTON -->
-    <Button text="Submit Verification"
-            fx:id="btnSubmitVerification"
-            onAction="#onSubmitVerification"
-            prefWidth="200"
-            AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20"/>
+    <Button fx:id="btnSubmitVerification" onAction="#onSubmitVerification" prefWidth="200" text="Submit Verification" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20" />
 
 </AnchorPane>

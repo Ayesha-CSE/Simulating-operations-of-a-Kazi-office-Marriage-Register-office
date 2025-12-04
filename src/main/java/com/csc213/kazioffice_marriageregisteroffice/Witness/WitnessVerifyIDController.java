@@ -1,6 +1,6 @@
 package com.csc213.kazioffice_marriageregisteroffice.Witness;
 
-import com.csc213.kazioffice_marriageregisteroffice.model.WitnessIdentityVerification;
+import com.csc213.kazioffice_marriageregisteroffice.Model.WitnessIdentityVerification;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -25,7 +25,7 @@ public class WitnessVerifyIDController implements Initializable {
     @FXML private TableColumn<WitnessIdentityVerification, String> colBride;
     @FXML private TableColumn<WitnessIdentityVerification, String> colGroom;
     @FXML private TableColumn<WitnessIdentityVerification, LocalDate> colDate;
-    @FXML private TableColumn<WitnessIdentityVerification, String> colStatus;
+    @FXML private TableColumn<com.csc213.kazioffice_marriageregisteroffice.Witness.WitnessIdentityVerification, String> colStatus;
 
     @FXML private TextField tfBrideNID;
     @FXML private TextField tfGroomNID;

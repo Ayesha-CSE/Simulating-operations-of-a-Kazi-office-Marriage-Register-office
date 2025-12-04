@@ -1,4 +1,4 @@
-package com.csc213.kazioffice_marriageregisteroffice;
+package com.csc213.kazioffice_marriageregisteroffice.Witness;
 
 import com.csc213.kazioffice_marriageregisteroffice.Witness.ModelClass.WitnessConsent;
 import javafx.event.ActionEvent;
