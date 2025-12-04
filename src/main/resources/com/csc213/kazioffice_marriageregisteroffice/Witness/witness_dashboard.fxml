@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.csc213.kazioffice_marriageregisteroffice.Witness.WitnessDashboardController"
+            fx:id="dashboardBorderPane"
+            prefWidth="900" prefHeight="550">
+
+    <!-- TOP: Title -->
+    <top>
+        <Label text="Witness Dashboard"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <!-- LEFT: Menu Buttons -->
+    <left>
+        <VBox spacing="8" style="-fx-padding: 10;">
+            <Label text="Witness Actions" style="-fx-font-weight: bold;"/>
+
+            <Button text="Goal 1 - Attend Ceremony"
+                    onAction="#onAttendCeremony"/>
+
+            <Button text="Goal 2 - Verify Identities"
+                    onAction="#onVerifyIdentities"/>
+
+            <Button text="Goal 3 - Confirm Consent"
+                    onAction="#onConfirmConsent"/>
+
+            <Button text="Goal 4 - Sign Documents"
+                    onAction="#onSignDocuments"/>
+
+            <Button text="Goal 5 - Submit Documents"
+                    onAction="#onSubmitDocuments"/>
+
+            <Button text="Goal 6 - Court Testimony"
+                    onAction="#onCourtTestimony"/>
+
+            <Button text="Goal 7 - Investigation Cooperation"
+                    onAction="#onInvestigationCooperation"/>
+
+            <Button text="Goal 8 - Document Accuracy Check"
+                    onAction="#onDocumentAccuracyCheck"/>
+        </VBox>
+    </left>
+
+    <!-- CENTER: Content Area where other FXMLs will be loaded -->
+    <center>
+        <AnchorPane fx:id="contentPlaceholder">
+            <Label text="Select an action from the left menu."
+                   layoutX="40" layoutY="40"/>
+        </AnchorPane>
+    </center>
+
+</BorderPane>
