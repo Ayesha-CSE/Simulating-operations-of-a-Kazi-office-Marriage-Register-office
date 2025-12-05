@@ -10,8 +10,6 @@ public class CreateMarriageCaseController
     @javafx.fxml.FXML
     private TextField contactText;
     @javafx.fxml.FXML
-    private TextField idnumberText;
-    @javafx.fxml.FXML
     private TableColumn contactColum;
     @javafx.fxml.FXML
     private TableColumn ageColum;
@@ -24,8 +22,6 @@ public class CreateMarriageCaseController
     @javafx.fxml.FXML
     private TableColumn idNumberColum;
     @javafx.fxml.FXML
-    private TableColumn nameColum1;
-    @javafx.fxml.FXML
     private TableColumn nameColum;
     @javafx.fxml.FXML
     private ComboBox maritalCombox;
@@ -33,6 +29,12 @@ public class CreateMarriageCaseController
     private TableColumn addressColum;
     @javafx.fxml.FXML
     private TextField ageText;
+    @javafx.fxml.FXML
+    private TextField date;
+    @javafx.fxml.FXML
+    private TableColumn dateColumn;
+    @javafx.fxml.FXML
+    private TextField idNumber;
 
     @javafx.fxml.FXML
     public void initialize() {
