@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc213.kazioffice_marriageregisteroffice.LegalAdvisor.LegalBackgroundCheckController">
+   <children>
+      <Label layoutX="140.0" layoutY="14.0" prefHeight="27.0" prefWidth="309.0" text=" Legal Advisor – Background Check">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="caseIdLabel" layoutX="14.0" layoutY="66.0" prefHeight="17.0" prefWidth="54.0" text="Case ID:" />
+      <ComboBox fx:id="caseIdComboBox" layoutX="84.0" layoutY="62.0" prefHeight="25.0" prefWidth="137.0" />
+      <Button layoutX="317.0" layoutY="62.0" mnemonicParsing="false" onAction="#loadCaseOnActionButton" text="Load Case" />
+      <TableView layoutX="48.0" layoutY="106.0" prefHeight="132.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="caseIdTableViewColumn" prefWidth="119.0" text="Case ID" />
+          <TableColumn fx:id="applicantTableViewColumn" prefWidth="121.0" text="Applicant " />
+            <TableColumn fx:id="checkDateTableViewColumn" prefWidth="114.0" text="Check Date" />
+            <TableColumn fx:id="resultTableViewColumn" prefWidth="138.0" text="Result" />
+        </columns>
+      </TableView>
+      <Label fx:id="applicantNameLabel" layoutX="14.0" layoutY="256.0" prefHeight="17.0" prefWidth="118.0" text="Applicant Name:" />
+      <Label fx:id="applicantNidLabel" layoutX="14.0" layoutY="289.0" prefHeight="17.0" prefWidth="118.0" text="Applicant NID:" />
+      <Label layoutX="14.0" layoutY="324.0" prefHeight="17.0" prefWidth="99.0" />
+      <Label fx:id="checkDateLabel" layoutX="13.0" layoutY="324.0" prefHeight="17.0" prefWidth="111.0" text="Check Date:" />
+      <Label fx:id="checkResultLabel" layoutX="12.0" layoutY="353.0" prefHeight="17.0" prefWidth="83.0" text="Check Result:" />
+      <TextField fx:id="applicantNameTextField" layoutX="105.0" layoutY="252.0" />
+      <TextField fx:id="applicantNidTextField" layoutX="95.0" layoutY="285.0" />
+      <DatePicker fx:id="checkDateDatePicker" layoutX="93.0" layoutY="320.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="checkResultComboBox" layoutX="95.0" layoutY="349.0" prefHeight="25.0" prefWidth="137.0" />
+      <Label fx:id="remarksLabel" layoutX="449.0" layoutY="248.0" prefHeight="17.0" prefWidth="52.0" text="Remarks:" />
+      <TextArea fx:id="remarksTextArea" layoutX="369.0" layoutY="267.0" prefHeight="38.0" prefWidth="221.0" />
+      <Button layoutX="300.0" layoutY="404.0" mnemonicParsing="false" onAction="#saveCheckOnActionButton" prefHeight="17.0" prefWidth="83.0" text="Save Check" />
+      <Button layoutX="411.0" layoutY="404.0" mnemonicParsing="false" onAction="#clearOnActionButton" prefHeight="25.0" prefWidth="61.0" text="Clear" />
+      <Button layoutX="501.0" layoutY="404.0" mnemonicParsing="false" onAction="#backOnActionButton" text="Back" />
+   </children>
+</AnchorPane>
